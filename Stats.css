@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(233, 47%, 7%);
+    height: 100vh;
+    margin: 0;
+}
+
+.main{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 8px;
+    margin: 0 8%;
+}
+
+.image-background{
+    opacity: 0.5;
+    background-color: #5b0086d9;
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.image-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 50%;
+    position: relative;
+}
+
+.image{
+    height: 100%;
+}
+
+.text-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+}
+
+.heading-1{
+    font-size: 30px;
+    font-family: "Inter";
+    color: white;
+    font-weight: 700;
+}
+
+.strong{
+    color: #AD59DA;
+}
+
+.paragraph{
+    font-size: 15px;
+    font-family: "Inter";
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 20%;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 90%;
+}
+
+.heading-social{
+    font-size: 24px;
+    font-family: "Inter";
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.p-social{
+    font-size: 12px;
+    font-family: "Lexa Deca";
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+@media (max-width: 950px){
+
+    body{
+        align-items: center;
+        margin: 70px 0;
+    }
+
+    .main{
+        flex-direction: column;
+        align-items: center;
+        width: 380px;
+        max-width: 92%;
+    }
+
+    .text-main{
+        align-items: center;
+    }
+
+    .image{
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .image-holder{
+        width: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .image-background{
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .heading-1{
+        text-align: center;
+    }
+
+    .paragraph{
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .social{
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+    }
+}
